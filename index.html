@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #fff5e6; /* Мягкий пастельный фон */
+            font-family: "Dancing Script", cursive;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            transform: rotate(-45deg);
+            animation: heartbeat 1.2s infinite;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 50px;
+            top: 0;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1) rotate(-45deg); }
+            25% { transform: scale(1.1) rotate(-45deg); }
+            50% { transform: scale(1) rotate(-45deg); }
+            75% { transform: scale(1.1) rotate(-45deg); }
+            100% { transform: scale(1) rotate(-45deg); }
+        }
+
+        .text {
+            margin-top: 20px;
+            font-size: 28px;
+            color: #5a3d2b; /* Тёплый коричневый цвет */
+            font-weight: bold;
+            line-height: 1.5;
+            max-width: 80%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <div class="text">
+        Happy Valentine's Day, 💖<br>
+        My Honey, 💕<br>
+        Wishing you to find the right mood ✨<br>
+        And be happy. 😊<br>
+        Smiles and a wonderful day to you! 🌸
+    </div>
+</body>
+</html>
